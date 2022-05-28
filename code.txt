@@ -1,1 +1,53 @@
-versão 1 do nosso código
+versão 1 do nosso cód
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de Formulário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Formulários.css">
+</head>
+<body>
+    <h1>Página de Formulário</h1>
+    
+    <h2>Área de cadastro</h2>
+    <form action="paginas/login.html" method="POST">
+        <input type="text" name="usuario" value="Seu id/user"/>
+        
+        <input type="submit" value="Cadastrar"/>
+        
+        <select
+        name="ordenacao">
+            <option>Selecione a opção</option>
+            <option>Estante</option>
+            <option>Sapateira</option>
+            <option>Closet</option>
+            <option>Arara</option>
+        </select> 
+    
+    </form>
+
+    <h2>Área Zona</h2>
+    <form>
+        <input type="radio" name="sim"/>
+        
+        <input type="radio" name="sim"/>
+        <br/>
+        <textarea name="Descreva"></textarea>
+    </form>
+
+    <h2>Preencher</h2>
+    <form>
+        <label>
+            Nome Completo:<br/>
+            <input type="text" name="nome"/>
+        </label>
+        <br/><br/>
+        <input type="checkbox" id="termos"/>
+        <label for="termos">Declaro que li e Aceito os termos de uso.</label>
+
+    </form>
+</body>
+</html>
+
