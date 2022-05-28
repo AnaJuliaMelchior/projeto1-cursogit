@@ -51,3 +51,31 @@ versão 1 do nosso cód
 </body>
 </html>
 
+
+============================branch
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de Formulário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Formulários.css">
+</head>
+<body>
+    <h1>Página de Formulário</h1>
+    
+    <h2>Área de cadastro</h2>
+    <form action="paginas/login.html" method="POST">
+
+        <label for="nome">Nome Completo</label>
+        <br/>
+        <input type="text" name=nome id="nome" />
+
+        <br/>
+
+        <input type="checkbox" id="teste" />
+        <label for="teste">Declaro que li e aceito.</label>
+
+        <button>Cadastrar</button>
+    </form>
