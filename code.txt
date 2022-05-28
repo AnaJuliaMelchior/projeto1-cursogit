@@ -1,53 +1,207 @@
 versão 1 do nosso cód
 
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Página de Formulário</title>
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Schoolbell&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Formulários.css">
+    <title>Bons Bolos</title>
+    <link rel="stylesheet" href="Estilo.css"/>
 </head>
 <body>
-    <h1>Página de Formulário</h1>
+    <h3>Ir para:</h3>
+        <a href="#BolodeMaçã">Bolo de Maçã</a></br>
+        <a href="#BolodeLaranja">Bolo de Laranja</a></br>
+        <a href="#BolodeFubá">Bolo de Fubá</a></br>
+        <a href="#BolodeChocolate">Bolo de Chocolate</a></br>
+        <a href="#BolodeMilho">Bolo de Milho</a></br>
+
+    <h1 id="titulo">Bolo de hoje: Bolo Simples</h1>
+    <!-- Formas para alterar: 
+        1- o nome do elemento em si, e todos elementos nomeados em igual sofrerão alterações
+        2- atribuir um ID, propriedade especìfica em um elemento específico, somento um elemento vai receber esse ID
+        3- class, o mais utliizado. atribui um nome específico e pode ser usado várias vezes com mesmo nome, 
+        é representado diferente no arquivo CSS externo
+        ex: class="texto" no CSS EXTERNO= .texto, com o ponto antes.-->
+
+    <p class="texto">Esse bolo simples é uma daquelas receitas básicas e deliciosas:
+        ele pode ser incrementado com calda de chocolate, recheio de brigadeiro,
+        doce de leite e outras delícias.</p> 
+    <!--A tag <p> significa um parágrafo-->
+
+    <div>
+        <img class="principal"src="https://edebabar.files.wordpress.com/2013/10/photo-3.jpg" 
+        alt="Bolo Simples">
+    </div>
+
+    <h2>Ingredientes:</h2>
+    <ul>
+        <li>2 xícaras (chá) de açúcar</li>
+        <li>3 xícaras (chá) de farinha de trigo</li>
+        <li>4 colheres (sopa) de margarina</li>
+        <li>3 ovos</li>
+        <li>1 e 1/2 xícara (chá) de leite</li>
+        <li>1 colher (sopa) bem cheia de fermento</li>
+    </ul>
+    <!--UL=unordered list, ou seja uma lista não ordenada-->
+
+    <h3>Modo de preparo</h3>
+    <ol>
+        <li id="item1">Bata as claras em neve e reserve.</li>
+        <li>Misture as gemas, a margarina e o açúcar até obter uma massa homogênea.</li>
+        <li>Acrescente o leite e a farinha de trigo aos poucos, sem parar de bater.</li>
+        <li>Por último, adicione as claras em neve e o fermento.</li>
+        <li class="pote">Despeje a massa em uma forma grande de furo central untada e enfarinhada.</li>
+        <li class="texto6">Asse em forno médio 180 °C, preaquecido, por aproximadamente 40 minutos <br>
+        ou ao furar o bolo com um garfo, este saia limpo.</li>
+    </ol> 
+    <!--OL=ordered list, lista ordenada, indica o passo a passo das infos, enumerada-->
     
-    <h2>Área de cadastro</h2>
-    <form action="paginas/login.html" method="POST">
-        <input type="text" name="usuario" value="Seu id/user"/>
-        
-        <input type="submit" value="Cadastrar"/>
-        
-        <select
-        name="ordenacao">
-            <option>Selecione a opção</option>
-            <option>Estante</option>
-            <option>Sapateira</option>
-            <option>Closet</option>
-            <option>Arara</option>
-        </select> 
+    <h6>Obs: Os resultados dependem das condições spresentadas</h6>
+    <!--Além do efeito visual, o <h 1-6>,serve também como motor de busca, o SEO, 
+    Search Engine Optimization (otimização do código)-->
+   
+    <!--<img src="https://edebabar.files.wordpress.com/2013/10/photo-3.jpg"alt="Bolo simples"/>-->
+    <!--Tag alt torna possível um texto alternativo ser exibido caso a imagem não apareça.
+    Para pessoas com deficiência visual também-->
+    <br/> 
+    <!--Para quebra a linha e apresentar na linha abaixo o próximo conteúdo-->
+
+    <a class="texto" 
+    href="https://www.tudogostoso.com.br/receita/29124-bolo-simples.html"
+    target="_blank"
+    title="Link do site real: TudoGostoso.com"
+    >Esse projeto é um experimento,
+    reservados todos os direitos autorais ao TudoGostoso.</a>
     
-    </form>
+    <hr>
+    <button>
+    <a 
+        class="button"
+        href="paginas/login.html" 
+        target="_blank"
+        title="Inserir dados; recuperar conta; nova conta."
+        >Fazer login
+    </a>
+    </button>
+    <!--Button/botão-->
+    <a
+        href="https://www.tudogostoso.com.br/"
+        target="blank">
+        <!--Target permite que o link me direcione para outra aba ou página-->
+        <img class="tg" src="bolos/logoTG.jpg">
+        <!--Posso atribuir imagem ao meu link-->
+    </a>
+    
+    <h2 id="BolodeMaçã">Bolo de Maçã</h2>
+    <img class="bolo" src="bolos/bolo de maça.jpg"/>
 
-    <h2>Área Zona</h2>
-    <form>
-        <input type="radio" name="sim"/>
-        
-        <input type="radio" name="sim"/>
-        <br/>
-        <textarea name="Descreva"></textarea>
-    </form>
+    <h2 id="BolodeLaranja">Bolo de Laranja</h2>
+    <img class="bolo" src="bolos/bolo de laranja.jpg">
 
-    <h2>Preencher</h2>
-    <form>
-        <label>
-            Nome Completo:<br/>
-            <input type="text" name="nome"/>
-        </label>
-        <br/><br/>
-        <input type="checkbox" id="termos"/>
-        <label for="termos">Declaro que li e Aceito os termos de uso.</label>
+    <h2 id="BolodeFubá">Bolo de Fubá</h2>
+    <img class="bolo" src="bolos/bolo de fubá.jpg">
 
-    </form>
+    <h2 id="BolodeChocolate">Bolo de Chocolate</h2>
+    <img class="bolo" src="bolos/bolo de chocolate.jpg">
+
+    <h2 id="BolodeMilho">Bolo de Milho</h2>
+    <img class="bolo" src="bolos/bolo de milho1.jpg">
+    <hr>
+
 </body>
 </html>
 
+
+------------------------------------------------------------------------
+---------------------------------BRANCH CSS
+#titulo {
+    color:gray;
+    font-size:30px;
+/*se eu quiser configurar mais elementos como h1 para receber as config de uma só vez, os renomeio
+caso tenha mais de um h1 e queira que recebam configs diferentes, atribuo um id ÚNICO para cada
+antes estava em h1 mas atribuí a ele um id #titulo*/
+}
+.texto6 {
+    color:black;
+    font-size:12px;
+    font-weight:bold;
+/*class+.texto A CLASS pode ser usada em quaisquer elemento a ser configurado, a mais utilizada*/
+}
+.principal {
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+/*Seleção por elemento: todo e qualquer elemento que tiver essa tag img, receberá as configs*/
+}
+/*EXEMPLO 1*/
+#item1 {
+    color:orange;
+    font-size:20px;
+}
+.pote {
+    color:orange;
+    font-size:20px;
+}
+/*EXEMPLO 2*/
+#item1,
+.pote {
+    color:orange;
+    font-size:20px;
+}
+.pote {
+    font-weight:bold;
+}
+/*eu posso fazer a mesma formatação em elementos diferentes e posso fazer isso de duas formas.
+seleciono os elementos separadamente e insiro as mesmas alterações EXEMPLO 1
+seleciono todos os elementos os separando por vírgulas e insiro as alterações EXEMPLO 2
+posso selecionar o mesmo elemento sozinho depois caso queira outra config diferente*/
+
+/*EXEMPLOO 3*/
+ol li {
+    color:peru;
+}
+/*OUTRA FORMA
+ELEMENTO OUTROELEMENTO (separados apenas pelo espaço)
+Só será aplicada a config em OUTROELEMENTO se ELEMENTO for o que precede. EXEMPLO 3*/
+
+div {
+    background-color:yellow;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 5px solid black;
+}
+.bolos {
+    color: black;
+}
+.bolo {
+    color: blue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    font-size: 20px;
+    
+}
+.tg {
+    width: 300px;
+    height: 150px; 
+}
+.link {
+    color: blue;
+    font-size: 30px;
+}
+.texto:visited {
+    color:red;
+/*Visited: muda a cor se já tiver acessado o link*/
+}
+.texto:hover {
+    color: purple;
+/*Quando o mouse descansa no link, a cor fica diferente*/
+}
+.button {   
+    color: orange;
+    height: 20px;
+    width: 180px;
+    font-size: 16px;
+    text-align: center;
+}
